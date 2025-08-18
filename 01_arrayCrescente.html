@@ -7,9 +7,18 @@
     */
 
     //ENTRADA
-
+    const numero1 = Number(prompt("Informe um número."));
+    const numero2 = Number(prompt("Informe um segundo número."));
 
     //PROCESSAMENTO
+    const numeroArray = [];
+    if (numero1 < numero2) {
+        numeroArray.push(numero1, numero2);
+        alert(numeroArray[0] + " - " + numeroArray[1]);
+    } else {
+        numeroArray.push(numero2, numero1);
+         alert(numeroArray[0] + " - " + numeroArray[1]);
+    } 
 
 
     //SAÍDA
