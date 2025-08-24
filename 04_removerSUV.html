@@ -9,9 +9,27 @@
     */
 
     //ENTRADA
+    let remocao = prompt("Qual dos seguintes carros gostaria de remover da lista: Tiggo, Sportage, Tucson ou EcoSport?").toLowerCase().trim();
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+
 
 
     //PROCESSAMENTO
+    if(remocao === "tiggo") {
+        carrosSUV.splice(0, 1);
+        alert("Carros SUV antes da remoção: Tiggo, Sportage, Tucson, EcoSport. Carros SUV após a remoção: " + carrosSUV.join(", ") + ".");
+    } else if(remocao === "sportage") {
+        carrosSUV.splice(1, 1);
+        alert("Carros SUV antes da remoção: Tiggo, Sportage, Tucson, EcoSport. Carros SUV após a remoção: " + carrosSUV.join(",") + ".");
+    } else if (remocao === "tucson") {
+        carrosSUV.splice(2, 1);
+        alert("Carros SUV antes da remoção: Tiggo, Sportage, Tucson, EcoSport. Carros SUV após a remoção: " + carrosSUV.join(",") + ".");
+    } else if(remocao === "ecosport") {
+        carrosSUV.splice(3, 1);
+        alert("Carros SUV antes da remoção: Tiggo, Sportage, Tucson, EcoSport. Carros SUV após a remoção: " + carrosSUV.join(",") + ".");
+    } else {
+        alert("Informe um carro válido.");
+    }
 
 
     //SAÍDA

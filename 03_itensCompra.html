@@ -11,11 +11,25 @@
     */
 
     //ENTRADA
+    const fruta1 = prompt("Informe a fruta da sua lista de compras.");
+    const fruta2 = prompt("Informe a segunda fruta da sua lista de compras.");
+    const fruta3 = prompt("Informe a terceira fruta da sua lista de compras.");
+    const bebida1 = prompt("Informe a primeira bebida da sua lista.");
+    const bebida2 = prompt("Informe a segunda bebida da sua lista.");
+    const bebida3 = prompt("Informe a terceira bebida da sua lista."); 
 
 
     //PROCESSAMENTO
+    const frutas = [fruta1, fruta2, fruta3];
+    const bebidas = [bebida1, bebida2, bebida3];
+    const listaCompleta = frutas.concat(bebidas);
+
 
 
     //SAÍDA
+    alert("As frutas a serem compradas são: " + frutas.join(", ") + ".");
+    alert("As bebidas a serem compradas são: " + bebidas.join(", ") + ".");
+
+    
 
 </script>

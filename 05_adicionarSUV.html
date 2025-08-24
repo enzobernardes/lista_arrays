@@ -9,9 +9,25 @@
     */
 
     //ENTRADA
-
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let adicionar = prompt("Qual carro gostaria de adicionar na lista: Tiggo, Sportage, Tucsom, Ecosport?").toLowerCase().trim();
 
     //PROCESSAMENTO
+    if(adicionar === "tiggo") {
+        carrosSUV.unshift("Tiggo");
+        alert("Carros SUV antes da adição: Tiggo, Sportage, Tucson, EcoSport. Carros SUV após a adição: " + carrosSUV.join(", ") + ".");
+    } else if(adicionar === "sportage") {
+        carrosSUV.push("Sportage");
+        alert("Carros SUV antes da adição: Tiggo, Sportage, Tucson, EcoSport. Carros SUV após a adição: " + carrosSUV.join(", ") + ".");
+    } else if (adicionar === "tucson") {
+        carrosSUV.push("Tucson");
+        alert("Carros SUV antes da adição: Tiggo, Sportage, Tucson, EcoSport. Carros SUV após a adição: " + carrosSUV.join(", ") + ".");
+    } else if(adicionar === "ecosport") {
+        carrosSUV.push("EcoSport");
+        alert("Carros SUV antes da adição: Tiggo, Sportage, Tucson, EcoSport. Carros SUV após a adição: " + carrosSUV.join(", ") + ".");
+    } else {
+        alert("Informe um carro válido.");
+    }
 
 
     //SAÍDA
