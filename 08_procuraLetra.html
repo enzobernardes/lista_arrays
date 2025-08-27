@@ -9,9 +9,18 @@
     */
 
     //ENTRADA
+    const palavra = prompt("Informe uma palavra.");
+    const letra = prompt("Informe qual letra deseja encontrar na palavra.");
 
 
     //PROCESSAMENTO
+    const posicao = palavra.indexOf(letra);
+
+if(posicao !== -1) {
+    alert(`A palavra ${palavra} possui a letra ${letra} e sua primeira posição é ${posicao}.`);
+   } else {
+        alert(`A palavra não possui a letra: ${letra}`)
+     }
 
 
     //SAÍDA
