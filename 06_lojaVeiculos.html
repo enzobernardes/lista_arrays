@@ -13,9 +13,47 @@
     */
 
     //ENTRADA
-
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
 
     //PROCESSAMENTO
+    const modeloCarro = prompt("Informe o tipo de veículo deseja inserir(SUV, Sedan ou Hatch).").toLowerCase().trim();
+    let carro1 = prompt("Informe um veículo para ser adicionado.").trim();
+    let carro2 = prompt("Informe outro veículo para adicionar.").trim();
+    let carro3 = prompt("Informe o último veículo a ser adicionado.").trim();
+    switch (modeloCarro) {
+        case "suv":
+            carrosSUV.push(carro1, carro2, carro3);
+            alert(carrosSUV)
+            
+            break;
+    
+        default:
+            alert("Informação inválida")
+            break;
+    }
+    switch (modeloCarro) {
+        case "sedan":
+            carrosSedan.push(carro1, carro2, carro3);
+            alert(carrosSedan)
+            break;
+    
+        default:
+            alert("Informacão inválida")
+            break;
+    }
+    switch (modeloCarro) {
+        case "hatch":
+            carrosHatch.push(carro1, carro2, carro3);
+            alert(carrosHatch)
+            break;
+    
+        default:
+            alert("Informação inválida")
+            break;
+    }
+
 
 
     //SAÍDA
